@@ -1,7 +1,7 @@
 {
   "name": "@soukadao/yaml-ts",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -20,8 +20,7 @@
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "build": "esbuild src/index.ts --bundle --outdir=dist --format=esm --platform=node && tsc",
-    "prepack": "bun run build"
+    "prepack": "esbuild src/index.ts --bundle --outdir=dist --format=esm --platform=node && tsc"
   },
   "dependencies": {},
   "devDependencies": {
