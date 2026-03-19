@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: "*.ts"
+      run: bun run lint:fix {staged_files}
+      stage_fixed: true
+    fmt:
+      glob: "*.ts"
+      run: bun run fmt {staged_files}
+      stage_fixed: true
+    test:
+      run: bun run test
