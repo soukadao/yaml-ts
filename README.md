@@ -5,13 +5,13 @@ A YAML 1.2.2 parser written in TypeScript.
 ## Install
 
 ```sh
-npm install yaml-ts
+npm install @soukadao/yaml-ts
 ```
 
 ## Usage
 
 ```ts
-import { parse } from "yaml-ts";
+import { parse } from "@soukadao/yaml-ts";
 
 parse("hello: world");
 // { hello: "world" }
