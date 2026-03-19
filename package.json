@@ -21,7 +21,7 @@
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "build": "esbuild src/index.ts --bundle --outdir=dist --format=esm --platform=node && tsc",
-    "prepare": "bun run build"
+    "prepublishOnly": "bun run build"
   },
   "dependencies": {},
   "devDependencies": {
