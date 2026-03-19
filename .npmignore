@@ -1,0 +1,9 @@
+src/
+coverage/
+.editorconfig
+.oxfmtrc.json
+.oxlintrc.json
+lefthook.yml
+tsconfig.json
+vitest.config.ts
+bun.lock
